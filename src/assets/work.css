@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+.abt {
+  width: 100vw;
+  height: auto;
+  padding-top: 2.5vw;
+  text-align: center;
+}
+
+.init-text-wrapper{
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+}
+
+.init-text-wrapper h1{
+  margin: auto;
+  line-height: 1.2;
+  text-align: left;
+  text-indent: 3em;
+  font-size: 3vw;
+  font-weight: 100;
+  -webkit-text-stroke: 0.1vw;
+  letter-spacing: .003em;
+  width: 40%;
+}
+
+.abt .moreabout {
+  height: auto;
+  background-color: black;
+  color: white;
+  position: relative;
+  padding-block: 5vw;
+  display: grid;
+  text-align: center;
+  grid-template-rows: 100vh 100vh;
+  grid-template-rows: 100dvh 100dvh;
+}
+
+.abt .moreabout h1{
+  font-size: 6vw;
+  margin: auto;
+  text-align: left;
+  font-family: "HK";
+  opacity: 0;
+  font-weight: 100;
+  text-align: center;
+  -webkit-text-stroke: 0.1vw;
+
+}
+/* 
+.select-works{
+  height: auto;
+  text-align: center;
+}
+
+.select-works article{
+  padding-top: 20dvh;
+  padding-top: 20vh;
+}
+
+.select-works article{
+  padding-bottom: 30vh;
+  padding-bottom: 30dvh;
+}
+
+.select-works p{
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin: 5vw;
+  text-transform: uppercase;
+}
+
+.work-component{
+  height: 15vw;
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  cursor: crosshair;
+  display: flex;
+  align-items: center;
+  border: 0.2vw solid currentColor;
+  justify-content: center;
+  position: relative;
+  opacity: 1;
+  width: 90%;
+  margin: auto;
+}
+
+.work-component h1{
+  font-size: 2vw;
+  white-space: nowrap;
+  line-height: 0;
+  text-align: left;
+  letter-spacing: -0.03em;
+  padding: 0.8vw;
+  margin-left: 1%;
+  text-transform: none;
+}
+
+.work-component h1 span {
+  font-size: 1vw;
+  letter-spacing: 0.01vw;
+}
+
+.work-component .type-of-project {
+  position: absolute;
+  right: 3%;
+}
+
+.work-component .type-of-project p {
+  display: inline-block;
+  border: 0.1vw solid currentColor;
+  border-radius: 5vw;
+  padding: 0.5vw;
+  padding-inline: 1vw;
+  margin-inline: 0.5vw;
+  font-size: 1.2vw;
+} */
+
+.projects {
+  /* width: 100vw; */
+  /* width: 100dvw; */
+  height: auto;
+  /* background-color: black; */
+  /* color: white; */
+}
+
+.projects p{
+  font-size: 2vw;
+  margin-top: 0%;
+  margin-left: 3vw;
+  text-transform: uppercase;
+}
+
+.projects .project-cards {
+  height: 13vw;
+  border-top: 0.2vw solid currentColor;
+  transition: all 0.2s linear;
+  cursor: crosshair;
+  padding-top: 2.5vw;
+  /* display: flex;
+  align-items: center; */
+  display: block;
+  position: relative;
+}
+
+.projects .project-cards h1 {
+  font-size: 3.5vw;
+  white-space: nowrap;
+  line-height: 0;
+  text-align: left;
+  letter-spacing: -0.03em;
+  font-weight: 100;
+  padding: 0.8vw;
+}
+
+.projects .project-cards .type-of-project {
+  position: absolute;
+  left: 0%;
+  text-align: center;
+}
+
+.projects .project-cards p {
+  display: inline-block;
+  border: 0.1vw solid currentColor;
+  border-radius: 5vw;
+  padding: 0.5vw;
+  padding-inline: 1vw;
+  margin-inline: 0.5vw;
+  font-size: 1.5vw;
+}
+
+.projects .project-cards h1 span {
+  font-size: 1.2vw;
+  letter-spacing: 0.01vw;
+}
+
+.projects .project-cards section {
+  display: none;
+  overflow-x: hidden;
+}
+
+.projects .project-cards section h1 {
+  animation: scrollText 6s infinite linear;
+  text-transform: uppercase;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.projects .project-cards:hover{
+  background-color: red;
+  color: white;
+}
+
+.marval {
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  background-color: red;
+  color: white;
+}
+
+.marval h1 {
+  margin: auto;
+  font-size: 10vw;
+  line-height: 0.8;
+  font-weight: 100;
+  letter-spacing: 1px;
+  cursor: crosshair;
+  opacity: 0;
+  text-align: center;
+  /* font-family: "hero"; */
+}
+
+.end {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  position: relative;
+  z-index: 9999999999999999999;
+  overflow-x: hidden;
+}
+
+.end .end-container {
+  padding-top: 3vw;
+  padding-left: 3vw;
+}
+
+.end section {
+  overflow: hidden;
+  height: fit-content;
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding-block: 1rem;
+}
+
+.end section div {
+  font-size: 3vw;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.end section svg {
+  position: absolute;
+  right: 8%;
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+#spin:after {
+  content: "";
+  animation: spin 50s ease-in-out infinite;
+  font-size: 2.5vw;
+}
+
+@keyframes spin {
+  0% {
+    content: "Have any question ?";
+  }
+  12.5% {
+    content: "Have any question ?";
+  }
+  25% {
+    content: "Got refferel for me ?";
+  }
+  37.5% {
+    content: "Want some advice ?";
+  }
+  50% {
+    content: "Keen to collaborate ?";
+  }
+  62.5% {
+    content: "Feel like chat ?";
+  }
+  75% {
+    content: "Any Project in mind ?";
+  }
+  87.5% {
+    content: "Any feedback ?";
+  }
+  100% {
+    content: "How's my portfolio ?";
+  }
+}
+
+.just-say {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.end p {
+  font-size: 1.8vw;
+}
+
+.end h1 {
+  font-size: 8vw;
+  line-height: 0;
+  /* font-family: "HR"; */
+}
+
+.end .end-track {
+  position: absolute;
+  bottom: 0%;
+  height: auto;
+}
+
+.end .end-track section {
+  display: flex;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+.end .end-track section span {
+  display: inline-block;
+  font-size: 2.2vw;
+  width: 100%;
+  font-weight: 100;
+  white-space: nowrap;
+  line-height: 1.5;
+  animation: scrollText 40s infinite linear;
+}
+
+@media screen and (max-width: 850px) {
+  .abt .moreabout p {
+    font-size: 2.5rem;
+  }
+  .end .end-track section span {
+    font-size: 20px;
+  }
+  #spin:after {
+    font-size: 20px;
+  }
+  .end section svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projects section h1 {
+    font-size: 4rem;
+  }
+  .projects .project-cards {
+    height: 10rem;
+    display: block;
+    border-top: 1.5px solid currentColor;
+  }
+  .projects .project-cards h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    white-space: break-spaces;
+    margin-inline: 0.3rem;
+    font-weight: bold;
+  }
+  .projects .project-cards h1 span {
+    font-size: 1rem;
+  }
+  .projects .project-cards .type-of-project {
+    left: 0%;
+    display: flex;
+  }
+  .projects .project-cards p {
+    font-size: 1rem;
+    padding: 0.4rem;
+    margin-inline: 0.5rem;
+    white-space: nowrap;
+    border: 1.5px solid currentColor;
+  }
+  .projects .project-cards svg {
+    display: none !important;
+  }
+}
+
+@media (orientation: portrait) {
+  .abt .moreabout p {
+    font-size: 35px;
+    width: 90%;
+    white-space: break-spaces;
+    /* word-break: break-word; */
+    font-weight: bold;
+  }
+
+  .projects section h1 {
+    font-size: 5rem;
+  }
+  .projects section h1 span::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .projects .project-cards {
+    height: 11rem;
+    display: block;
+    border-top: 1.5px solid currentColor;
+  }
+  .projects .project-cards h1 {
+    font-size: 2rem;
+    line-height: 1;
+    white-space: break-spaces;
+    margin-inline: 0.3rem;
+    font-weight: bold;
+  }
+  .projects .project-cards h1 span {
+    font-size: 1rem;
+  }
+  .projects .project-cards .type-of-project {
+    left: 0%;
+    display: flex;
+  }
+  .projects .project-cards p {
+    font-size: 1rem;
+    padding: 0.4rem;
+    margin-inline: 0.5rem;
+    white-space: nowrap;
+    border: 1.5px solid currentColor;
+  }
+  .projects .project-cards svg {
+    display: none;
+  }
+
+  .marval h1 {
+    font-size: 10vw;
+    font-weight: bold;
+  }
+
+  .end .end-container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  /* .end section{ padding-block: 1rem ; } */
+  .end section div {
+    margin-left: 0.5rem;
+  }
+  .end section svg {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  #spin:after {
+    font-size: 1.3rem;
+  }
+  .end p {
+    font-size: 1.2rem;
+  }
+  .end .end-track section span {
+    font-size: 1.3rem;
+    line-height: 0.8;
+    font-weight: bold;
+  }
+}

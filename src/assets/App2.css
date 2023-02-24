@@ -1,0 +1,259 @@
+.main2{
+    height: fit-content;
+    text-align: center;
+}
+
+.main2 article,.select-works article{
+    padding-top: 20dvh;
+    padding-top: 20vh;
+    padding-bottom: 20dvh;
+    padding-bottom: 20vh;
+}
+
+.select-works article{
+    padding-bottom: 30vh;
+    padding-bottom: 30dvh;
+}
+
+.main2 p,.select-works p{
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: 5vw;
+    text-transform: uppercase;
+}
+
+.main2 h1,.select-works h1{
+    text-transform: uppercase;
+    font-size: 3vw;    
+}
+
+.status-and-skills{
+    height: auto;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+.grow-ball{
+    width: 0vw;
+    height: 0vw;
+    border-top-right-radius: 999%;
+    border-top-left-radius: 999%;
+    margin: auto;
+    text-align: center;
+    transition: all .1s linear;
+    overflow: hidden;
+}
+
+.grow-ball div{
+    margin-top: 35dvh;
+}
+
+.grow-ball div h1{
+    display: inline-block;
+    width: 56vw;
+    text-align: center;
+}
+
+.grow-ball div h1 .albm_span{ opacity: 0 ; }
+
+.grow-ball .global{
+    position: relative;
+}
+
+.grow-ball .global svg{
+    width: 25vw;
+    height: 25vw;
+    stroke-width: 0.2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.grow-ball .global h1{
+    /* font-size: ; */
+}
+
+.grow-ball section{
+    display: flex;
+    overflow-x: hidden;
+}
+
+.grow-ball section h1{
+    font-size: 15vw;
+    white-space: nowrap;
+    animation: scrollText 30s infinite linear;
+}
+
+@keyframes scrollText {from { transform: translateX(0) }to { transform: translateX(-100%) }}
+
+.select-works{
+    height: auto;
+    text-align: center;
+}
+
+.work-component{
+    height: 15vw;
+    transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    cursor: crosshair;
+    display: flex;
+    align-items: center;
+    border: 0.2vw solid currentColor;
+    /* justify-content: center; */
+    position: relative;
+    opacity: 0;
+    /* width: 90%; */
+    margin: auto;
+}
+
+.work-component h1{
+    font-size: 2vw;
+    white-space: nowrap;
+    line-height: 0;
+    text-align: left;
+    letter-spacing: -0.03em;
+    padding: 0.8vw;
+    margin-left: 1%;
+    text-transform: none;
+}
+
+.work-component h1 span {
+    font-size: 1vw;
+    letter-spacing: 0.01vw;
+}
+
+.work-component .type-of-project {
+    position: absolute;
+    right: 3%;
+    /* margin-block: 0; */
+    /* text-align: center; */
+}
+
+.work-component .type-of-project p {
+    display: inline-block;
+    border: 0.1vw solid currentColor;
+    border-radius: 5vw;
+    padding: 0.5vw;
+    padding-inline: 1vw;
+    margin-inline: 0.5vw;
+    font-size: 1.2vw;
+}
+
+
+/* 
+
+.work-component h1 span{
+    font-size: 1.2vw;
+    letter-spacing: 0.01vw;
+}
+
+.work-component .type-of-project{
+    text-align: center;
+    height: fit-content;
+}
+
+.work-component .type-of-project p{
+    display: inline-block;
+    border: 0.1vw solid currentColor;
+    border-radius: 5vw;
+    padding: 0.5vw;
+    padding-inline: 1vw;
+    margin-inline: 0.5vw;
+    font-size: 1.5vw;
+} */
+
+/* .work-component svg{
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    right: 5%;
+    border: 0.1vw solid currentColor;
+    border-radius: 99%;
+    padding: 0.5vw;
+    transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+} */
+
+.projects {
+    /* width: 100vw; */
+    /* width: 100dvw; */
+    height: auto;
+  }
+  
+  .projects section h1 {
+    font-size: 11vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .projects .project-cards {
+    height: fit-content;
+    border-top: 0.2vw solid currentColor;
+    transition: all 0.2s linear;
+    cursor: crosshair;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .projects .project-cards h1 {
+    font-size: 3.5vw;
+    white-space: nowrap;
+    line-height: 0;
+    text-align: left;
+    letter-spacing: -0.03em;
+    font-weight: 100;
+    padding: 0.8vw;
+  }
+  
+  .projects .project-cards .type-of-project {
+    position: absolute;
+    left: 60%;
+    text-align: center;
+  }
+  
+  .projects .project-cards p {
+    display: inline-block;
+    border: 0.1vw solid currentColor;
+    border-radius: 5vw;
+    padding: 0.5vw;
+    padding-inline: 1vw;
+    margin-inline: 0.5vw;
+    font-size: 1.5vw;
+  }
+  
+  .projects .project-cards h1 span {
+    font-size: 1.2vw;
+    letter-spacing: 0.01vw;
+  }
+  
+  .projects .project-cards svg {
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    right: 5%;
+    border: 0.1vw solid currentColor;
+    border-radius: 99%;
+    padding: 0.5vw;
+    transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  .projects .project-cards section {
+    display: none;
+    overflow-x: hidden;
+  }
+  
+  .projects .project-cards section h1 {
+    animation: scrollText 6s infinite linear;
+    text-transform: uppercase;
+  }
+  
+  @keyframes scrollText {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }

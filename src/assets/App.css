@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "HK";
+  src: url("NHaasGroteskDSPro-55Rg.4df8dc33.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HR";
+  src: url("Rejouice-Headline-4ff9b9bbd7857ecb27f4ae48631d77f5.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "hero";
+  src: url("https://use.typekit.net/af/3e504d/00000000000000007735c85b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3");
+}
+
+::selection {
+  background-color: black;
+  color: rgb(147, 147, 147);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.7vw;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: currentColor;
+  position: absolute;
+  border-radius: 3vw;
+}
+
+body {
+  font-family: "HK", sans-serif;
+  font-weight: 300;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: all 1s cubic-bezier(1.2, 0, 0.89898, 1.332);
+  /* display: grid; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--col);
+}
+
+.load {
+  height: 100dvh;
+  position: relative;
+  overflow-y: hidden;
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+  display: grid;
+}
+
+.seprating-divs-loader {
+  height: 50dvh;
+}
+
+.number {
+  /* mix-blend-mode: difference; */
+  color: rgb(255, 0, 0);
+  font-size: 35vw;
+  line-height: 0;
+  font-family: "hero";
+  margin: auto;
+  transform: translateY(100dvh);
+  z-index: 999999999999999999999999999999999999999999999;
+}
+
+.site-container {
+  opacity: 0;
+}
+
+/* .site-container::after{
+  animation: grain 8s steps(10) infinite;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paper-pattern.png);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.3;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  z-index: -999999999999999999;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+} */
+
+#hero-container {
+  transition: all 0.5s linear;
+  width: 100vw;
+  width: 100dvw;
+  height: 100dvh;
+  height: 100vh;
+  background-color: red;
+  color: white;
+}
+
+/* main section{
+  margin: auto;
+  text-align: center;
+}
+
+main section svg{
+  width: 70vw;
+  height: 25vw;
+}
+
+main section h1{
+    width: 70%;
+    display: inline-block;
+    font-size: 2.5vw;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 1;
+    overflow-wrap: break-word;
+}
+
+main section div{
+	display: grid;
+	grid-template-columns: 15vw 15vw;
+	place-content: center;
+	gap: 1vw;
+} */
+
+#menu{
+  font-size: 2.2vw;
+  margin: 3vw;
+  top: 0%;
+  position: fixed;
+  right: 0%;
+  color: white;
+  cursor: crosshair;
+  z-index: 9999999999999999999999999999999999;
+}
+
+#hero-container h1 {
+  position: absolute;
+  bottom: 2%;
+  margin: 3vw;
+  font-size: 7vw;
+  line-height: 1;
+  letter-spacing: .003em;
+  font-weight: 100;
+  -webkit-text-stroke: 0.2vw;
+  transform: translateY(20vw);
+  text-transform: capitalize;
+}
+
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  position: fixed;
+  top: 0%;
+  z-index: 99999999999999999999;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: translateY(-100vh);
+  opacity: 0.91;
+}
+
+.menu div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.menu div svg {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.menu div svg:hover {
+  rotate: 90deg;
+  scale: 0.5;
+}
+
+.menu div section {
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  color: currentColor;
+}
+
+.menu h1 {
+  font-size: 7vw;
+  line-height: 0.1;
+  letter-spacing: 0ch;
+  font-weight: bold;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  font-family: "Raleway";
+  color: currentColor;
+  -webkit-text-stroke: 1px;
+}
+
+.menu h1:hover {
+  transform: translateX(5vw);
+}
+
+@media screen and (max-width: 850px) {
+  nav p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav p {
+    margin: 2rem;
+  }
+  nav svg {
+    stroke-width: 2.5px;
+    width: 2rem;
+    height: 1.5rem;
+    margin: 2rem;
+  }
+}
+
+@media (orientation: portrait) {
+  .number {
+    font-size: 45vw;
+  }
+
+  main section {
+    text-align: center;
+  }
+  main section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    -webkit-text-stroke: 3px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 0.4em;
+    text-transform: uppercase;
+  }
+  main section h1 span {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+  }
+
+  nav p {
+    font-size: 21px;
+  }
+  nav svg {
+    width: 2.3rem;
+  }
+
+  .menu h1 {
+    font-size: 3.5rem;
+  }
+  .menu div section {
+    bottom: 5%;
+  }
+  .menu div svg {
+    width: 5rem;
+    height: 5rem;
+  }
+}
